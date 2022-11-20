@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <!-- Formulir -->
+                <h2>Formulir Mahasiswa</h2>
+
+                NPM
+                <input type="text" name="npm" id="npm" class="form-control"><br>
+                Nama
+                <input type="text" name="nama" id="nama" class="form-control"><br>
+
+                <button class=" btn btn-primary btn-block" onclick="simpan()">Simpan</button>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <!-- ul id= listMahasiswa -->
+                <ul class="list-group" id="listMahasiswa"></ul>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <!-- table id = tbMahasiswa -->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>NPM</th>
+                            <th>Nama Mahasiswa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblMahasiswa"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        console.log("tes");
+    </script> -->
+
+    <script src="javascript.js">
+    </script>
+</body>
+
+</html>
